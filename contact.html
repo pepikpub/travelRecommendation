@@ -13,13 +13,32 @@
                 <a href="./about.html" id="about">About us</a>
                 <a href="./contact.html" id="contact">Contact Us</a>
             </div>
-            <div class="search-bar">
-                <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
-                <button type="button" id="searchBtn">Search</button>
-                <button type="reset" id="resetBtn">Reset</button>
+        </nav>    
+        
+        <section class="contact-section">
+            <h2>Contact us</h2>
+            <p>Have questions or suggestions? Contact us, and we'll respond as soon as possible.</p>
+        
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="userName">Your name</label>
+                    <input type="text" id="userName" name="name" placeholder="Enter your name" required>
                 </div>
-        </nav>      
-       
+        
+                <div class="form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="email" placeholder="example@mail.com" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="userMessage">Message</label>
+                    <textarea id="userMessage" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                </div>
+        
+                <button type="submit" class="submit-btn">Sent</button>
+            </form>
+        </section>
+    
         <script src="./travel_recommendation.js"></script>
     </body>
 </html>

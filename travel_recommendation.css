@@ -227,3 +227,65 @@ textarea {
 .submit-btn:hover {
     background-color: #088292;
 }
+
+#results-container {
+    position: fixed; 
+    top: 80px;      
+    right: 20px;    
+    width: 350px;   
+    max-height: 80vh; 
+    overflow-y: auto; 
+    z-index: 1001;  
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+}
+
+.result-card {
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    animation: slideIn 0.5s ease-out; 
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.result-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.card-info p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.visit-btn {
+    background-color: #088292;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
